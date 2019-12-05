@@ -1,4 +1,4 @@
-variable '"aws_region" {    
+variable "aws_region" {    
     Default = "us-west-2"
 }
 variable "vpc_cidr" {
