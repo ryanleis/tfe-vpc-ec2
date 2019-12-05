@@ -1,6 +1,6 @@
 #TF to kick off build into DEV
 provider "aws" {
-  region = var.aws_region
+  region = "us-west-2"
 }
 
 module "my_vpc" {
@@ -20,6 +20,3 @@ module "my_ec2" {
   instance_type = "t2.micro"
   subnet_id     = "${module.my_vpc.subnet_id}"
 }
-
-variable "aws_region" {    
-    default = "us-west-2"
