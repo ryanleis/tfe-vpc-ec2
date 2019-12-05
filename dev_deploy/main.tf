@@ -1,3 +1,4 @@
+#TF to kick off build into DEV
 provider "aws" {
   region = var.aws_region
 }
