@@ -1,3 +1,4 @@
+#create AWS EC2 resource
 resource "aws_instance" "web" {
   count         = var.ec2_count
   ami           = var.ami_id
