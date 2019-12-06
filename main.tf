@@ -3,6 +3,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
+#Create AWS VPC
 module "my_vpc" {
   source      = "./modules/vpc"
   vpc_cidr    = "192.168.0.0/16"
@@ -13,6 +14,7 @@ module "my_vpc" {
 
 }
 
+#Create AWS EC2
 module "my_ec2" {
   source        = "./modules/ec2"
   ec2_count     = 1
